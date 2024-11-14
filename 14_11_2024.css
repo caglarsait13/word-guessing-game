@@ -1,0 +1,49 @@
+/* Name and ID Styling */
+p.centered {
+    text-indent: 3mm;
+    text-align: center;
+    text-emphasis-color: red;
+    text-emphasis-style: "*";
+    text-shadow: 2px 2px yellow;
+}
+
+em {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+
+/* GitHub Icon Centering */
+.center-icon {
+    text-align: center;
+}
+
+.center-icon img {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+/* Course List Styling */
+ol {
+    border: thick solid purple;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    padding: 4ex;
+    width: 50%;
+    background-color: aquamarine;
+}
+
+/* Heading 1 (Bees) Styling */
+h1 {
+    color: red;
+    text-decoration: underline;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Table Header Styling */
+table th {
+    background-color: orange;
+    color: black;
+    padding: 8px;
+    text-align: center;
+    font-weight: bold;
+}
