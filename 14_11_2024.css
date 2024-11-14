@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Name and ID Styling */
 p.centered {
     text-indent: 3mm;
@@ -47,3 +48,20 @@ table th {
     text-align: center;
     font-weight: bold;
 }
+=======
+<style type = "text/css">
+            h1    {
+                    font-size: 24 pt;
+                    color: red;
+                    text-decoration: underline;
+                    font-family: tahoma, helvetica, sans-serif;
+                  }
+                  
+            em    {
+                    font-style: normal;
+                    color: red;
+                    background-color: yellow;
+                    font-weight: bold;
+                  }
+        </style>
+>>>>>>> e6247aed541ee2e468e8c41cdc5064ae42215aa6
