@@ -5,7 +5,28 @@
     <title>My Web Page</title>
     <link rel="stylesheet" href="14_11_2024.css">
 </head>
-<body>
+<body onload="document.body.style.backgroundColor='pink'"
+      onresize="document.body.style.backgroundColor='lightblue'"
+      
+      onkeydown="document.body.style.backgroundColor='white'"
+      onkeyup="document.body.style.backgroundColor='lightyellow'">
+
+    <script>
+
+        function welcomeFunction() {
+            alert("Welcome!");
+        }
+
+        function keydownFunction(){
+            document.getElementById("name").style.backgroundColor = "yellow";
+        }
+        function keyupFunction(){
+            document.getElementById("name").style.backgroundColor = "lightblue";
+        }
+
+    </script>
+
+    Enter your name: <input type="text" id="name" onkeydown="keydownFunction()" onkeyup="keyupFunction()">
     
     <p class="centered">
         <em>
@@ -31,7 +52,8 @@
         <li>MAT104E-Mathematics 2</li>
     </ol>
     
-    <h1>Bees</h1>
+    <h1 onmouseover="style.color = 'orange'; style.backgroundColor='lightgreen'"
+        onmouseout="style.color = 'red'; style.backgroundColor=''">>Bees</h1>
 
     <p>The Universe of Bees</p>
 	    
