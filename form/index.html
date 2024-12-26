@@ -12,16 +12,18 @@
                 event.preventDefault();
 
                 let studentIDControl = checkStudentID();
+                let nameControl = checkName();
+                let ageControl = checkAge();
 
                 console.log("Student ID Check Result: " + checkStudentID());
 
-                if(checkName()) {
+                if(nameControl === 1) {
                     alert("Name must be filled!");
                 }else if(studentIDControl === 1) {
                     alert("Student ID must be 9 digits!");
                 } else if(studentIDControl === 2) {
                     alert("Student ID must be only numbers!");
-                } else if(checkAge()) {
+                } else if(ageControl === 1) {
                     alert("Age and birthdate do not match!");
                 } else {
                     let today = new Date();
@@ -30,22 +32,25 @@
             }
 
             function checkAge() {
-                console.log("Age is being checked...");
-                let today = new Date();
-                let dateWritten = new Date(document.getElementById("date").value);
-                let yearWritten = dateWritten.getFullYear();
-                if(document.getElementById("ageCall").value - "0" === today.getFullYear() - yearWritten) {
+                console.log("Age is being checked.");
+                let currentYear = new Date().getFullYear();
+                let inputYear = new Date(document.getElementById("date").value).getFullYear();
+                let age = parseInt(document.getElementById("ageCall").value);
+                if(currentYear - inputYear === age){
                     return 0;
-                } else return 1;
+                }else{
+                    return 1;
+                }
             }
 
             function checkName() {
-                console.log("Name is being checked");
+                console.log("Name is being checked.");
                 let name = document.getElementById("name").value;
-                if(name === "")
+                if(name === ""){
                     return 1;
-                else
+                } else {
                     return 0;
+                }
             }
 
             function checkStudentID() {
