@@ -15,14 +15,14 @@
 
                 console.log("Student ID Check Result: " + checkStudentID());
 
-                if(studentIDControl === 1) {
+                if(checkName()) {
+                    alert("Name must be filled!");
+                }else if(studentIDControl === 1) {
                     alert("Student ID must be 9 digits!");
                 } else if(studentIDControl === 2) {
                     alert("Student ID must be only numbers!");
                 } else if(checkAge()) {
                     alert("Age and birthdate do not match!");
-                } else if(checkName()) {
-                    alert("Name must be filled!");
                 } else {
                     let today = new Date();
                     alert("Form submitted successfully! Date: " + today.getDate() + " " + (today.getMonth() + 1) + " " + today.getFullYear());
