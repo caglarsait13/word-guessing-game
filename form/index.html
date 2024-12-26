@@ -57,9 +57,9 @@
                 console.log("Student ID is being checked.");
                 let studentID = document.getElementById("id").value;
 
-                if(isNaN(studentID)) {
+                if(studentID.length != 9) {
                     return 2;
-                } else if(studentID.length != 9) {
+                } else if(isNaN(studentID)) {
                     return 1;
                 } else return 0;
             }
