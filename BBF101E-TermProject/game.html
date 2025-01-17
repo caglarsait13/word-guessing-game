@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Puzzle Challenge</title>
+    <link rel="stylesheet" href="gamestyle.css">
+</head>
+<body>
+    <div id="gameboard">
+        <h1>Word Prediction Game</h1>
+
+        <div class="letters-align">
+            <div class="box">
+                <img class="hidden" src="b_word.svg" id="b_letter">
+            </div>
+            <div class="box">
+                <img class="hidden" src="l_word.svg" id="l_letter">
+            </div>
+            <div class="box">
+                <img class="hidden" src="i_word.svg" id="i_letter">
+            </div>
+            <div class="box">
+                <img class="hidden" src="n_word.svg" id="n_letter">
+            </div>
+            <div class="box">
+                <img class="hidden" src="k_word.svg" id="k_letter">
+            </div>
+        </div>
+
+        <div class="controls">
+            <div class="input">
+                <input id="guess" type="text">
+            </div>
+
+            <div class="buttons">
+                <button id="submit-btn">Submit</button>
+                <button id="reset-btn" class="hidden">Reset</button>
+            </div>
+
+            <div class="others">
+                <p id="score">Points: 0</p>
+                <div id="hearts">
+                    <img src="hearts.svg" class="hearts-icon">
+                    <img src="hearts.svg" class="hearts-icon">
+                    <img src="hearts.svg" class="hearts-icon">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="gamescript.js"></script>
+</body>
+</html>
