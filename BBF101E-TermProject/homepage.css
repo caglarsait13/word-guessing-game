@@ -30,6 +30,9 @@ p.bio   {
     background-color: #9bcee0;
     margin-left: 50px;
     margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 button#buttons {
@@ -45,4 +48,18 @@ h1 {
     background-color: #e1d77d;
     border: solid thick black;
 }
+
+p.academic   {
+    display: block;
+    width: 300px;
+    height: 300px;
+    border: solid thick black;
+    background-color: #9bcee0;
+    margin-left: 50px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
