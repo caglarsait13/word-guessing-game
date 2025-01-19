@@ -1,3 +1,4 @@
+//general variables are here
 const b_letter = document.getElementById("b_letter");
 const l_letter = document.getElementById("l_letter");
 const i_letter = document.getElementById("i_letter");
@@ -13,8 +14,8 @@ let currentScore = 0;
 let lives = 3;
 let control = 0;
 
+/* reset and submit buttons are here*/
 resetBtn.classList.add("hidden");
-
 submitBtn.addEventListener("click", () => {
     const input = document.getElementById("guess").value.toLowerCase();
 
@@ -36,10 +37,12 @@ submitBtn.addEventListener("click", () => {
 
 resetBtn.addEventListener("click", resetGame);
 
+//This function checks the letters.
 function checkLetter(letter) {
     if (myWord[control] === letter) {
         letters[control].classList.remove("hidden");
-        letters[control].parentElement.style.backgroundColor = "transparent"; 
+        letters[control].parentElement.style.backgroundColor = "transparent";
+        letters[control].parentElement.style.border = "none";
         currentScore += 20;
         document.getElementById("guess").value = "";
         control++;
@@ -56,10 +59,12 @@ function checkLetter(letter) {
     }
 }
 
+//This function displays all letters.
 function showLetters() {
     for (let i = 0; i < letters.length; i++) {
         letters[i].classList.remove("hidden");
         letters[i].parentElement.style.backgroundColor = "transparent";
+        letters[i].parentElement.style.border = "none";
     }
 }
 
@@ -71,7 +76,7 @@ function endGame(isTrue) {
     submitBtn.classList.add("hidden");
     resetBtn.classList.remove("hidden");
 }
-
+//This function restarts the game.
 function resetGame() {
     currentScore = 0;
     lives = 3;
@@ -80,6 +85,7 @@ function resetGame() {
     for (let i = 0; i < letters.length; i++) {
         letters[i].classList.add("hidden");
         letters[i].parentElement.style.backgroundColor = "#9bcee0";
+        letters[i].parentElement.style.border = "";
     }
     submitBtn.classList.remove("hidden");
     resetBtn.classList.add("hidden");
