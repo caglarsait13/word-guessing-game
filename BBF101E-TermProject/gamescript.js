@@ -65,7 +65,7 @@ function showLetters() {
 
 function endGame(isTrue) {
     setTimeout(() => {
-        alert(isTrue ? "You won!" : "You lose!");
+        alert(isTrue ? "You win!" : "You lose!");
     }, 100);
 
     submitBtn.classList.add("hidden");
