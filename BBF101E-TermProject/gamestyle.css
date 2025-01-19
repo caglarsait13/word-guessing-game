@@ -15,7 +15,6 @@ body {
   width: 90%;
   max-width: 500px;
   background: #ffffff;
-  border-radius: 12px;
   padding: 20px;
 }
 
@@ -31,7 +30,6 @@ body {
   height: 70px;
   background-color: #9bcee0;
   border: 2px solid #000000;
-  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,7 +44,6 @@ input#guess {
   padding: 10px;
   font-size: 16px;
   border: 2px solid #ccc;
-  border-radius: 8px;
   width: 100%;
   max-width: 250px;
   margin-bottom: 15px;
@@ -63,10 +60,8 @@ input#guess:focus {
   border: none;
   padding: 10px 15px;
   font-size: 16px;
-  border-radius: 8px;
   cursor: pointer;
   margin: 5px;
-  transition: background-color 0.3s;
 }
 
 

@@ -58,9 +58,8 @@ function checkLetter(letter) {
 
 function showLetters() {
     for (let i = 0; i < letters.length; i++) {
-        let charElement = letters[i];
-        charElement.classList.remove("hidden");
-        charElement.parentElement.style.backgroundColor = "transparent";
+        letters[i].classList.remove("hidden");
+        letters[i].parentElement.style.backgroundColor = "transparent";
     }
 }
 
@@ -79,9 +78,8 @@ function resetGame() {
     control = 0;
 
     for (let i = 0; i < letters.length; i++) {
-        let charElement = letters[i];
-        charElement.classList.add("hidden");
-        charElement.parentElement.style.backgroundColor = "#9bcee0";
+        letters[i].classList.add("hidden");
+        letters[i].parentElement.style.backgroundColor = "#9bcee0";
     }
     submitBtn.classList.remove("hidden");
     resetBtn.classList.add("hidden");
