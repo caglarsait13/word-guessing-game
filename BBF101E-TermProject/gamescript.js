@@ -59,21 +59,21 @@ function checkLetter(letter) {
         letters[2].parentElement.style.border = "none";
         currentScore += 20;
         document.getElementById("guess").value = "";
-        submittedLetters[3] = "i";
+        submittedLetters[2] = "i";
     }else if (myWord[3] === letter && submittedLetters[3] != "n" ) {
         letters[3].classList.remove("hidden");
         letters[3].parentElement.style.backgroundColor = "transparent";
         letters[3].parentElement.style.border = "none";
         currentScore += 20;
         document.getElementById("guess").value = "";
-        submittedLetters[4] = "n";
+        submittedLetters[3] = "n";
     }else if (myWord[4] === letter && submittedLetters[4] != "k") {
         letters[4].classList.remove("hidden");
         letters[4].parentElement.style.backgroundColor = "transparent";
         letters[4].parentElement.style.border = "none";
         currentScore += 20;
         document.getElementById("guess").value = "";
-        submittedLetters[5] = "k";
+        submittedLetters[4] = "k";
     }
     else {
         lives -= 1;
