@@ -63,9 +63,9 @@ function showLetters() {
     }
 }
 
-function endGame(istrue) {
+function endGame(isTrue) {
     setTimeout(() => {
-        alert(istrue ? "You won!" : "You lose!");
+        alert(isTrue ? "You won!" : "You lose!");
     }, 100);
 
     submitBtn.classList.add("hidden");
