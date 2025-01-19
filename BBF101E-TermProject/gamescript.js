@@ -114,6 +114,7 @@ function resetGame() {
         letters[i].classList.add("hidden");
         letters[i].parentElement.style.backgroundColor = "#9bcee0";
         letters[i].parentElement.style.border = "";
+        submittedLetters[i] = "";
     }
     submitBtn.classList.remove("hidden");
     resetBtn.classList.add("hidden");
