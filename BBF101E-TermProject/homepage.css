@@ -40,6 +40,7 @@ button#buttons {
     height: 100px;
     background-color: #9bcee0;
     cursor: pointer;
+    border: solid thick black;
 }
 
 h1 {
